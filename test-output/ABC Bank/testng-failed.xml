@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ABC Bank]">
+  <test thread-count="5" name="Personal Loan(failed)">
     <classes>
       <class name="test.PersonalLoan1">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- test.PersonalLoan1 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [ABC Bank] -->
