@@ -1,6 +1,5 @@
 package test;
 
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -12,7 +11,7 @@ public class HomeLoan {
 		System.out.println("THis sets the manager level access before starting any testcase");
 	}
 
-	@Test
+	@Test(groups = { "Smoke" })
 	public void HomeLoanMobileLogin() {
 
 		System.out.println("I am in Home Loan Mobile Login testCase");
@@ -30,7 +29,7 @@ public class HomeLoan {
 		System.out.println("I am in Home Loan Web Logout testCase");
 	}
 
-	@Test
+	@Test(groups = { "Smoke" })
 	public void HomeLoanMobileLogout() {
 
 		System.out.println("I am in Home Loan Web Logout testCase");

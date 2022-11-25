@@ -18,18 +18,18 @@ public class PersonalLoan {
 
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups = { "Smoke" })
 	public void personalLoanMobileLogin() {
 		System.out.println("I am in personal Loan Mobile Login testCase");
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = { "Smoke" })
 	public void personalLoanMobileLogout() {
 
 		System.out.println("I am in personal Loan Mobile logout testCase");
 	}
 
-	@Test
+	@Test(groups = { "Smoke" })
 	public void PersonalTest1() {
 		System.out.println("PL testcase 1");
 	}
@@ -39,7 +39,7 @@ public class PersonalLoan {
 		System.out.println("PL testcase 2");
 	}
 
-	@Test
+	@Test(groups = { "Smoke" })
 	public void PersonalTest3() {
 		System.out.println("PL testcase 3");
 	}

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="password123"/>
+  <parameter name="url" value="www.amazon.in"/>
+  <parameter name="username" value="Customer user name"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.PersonalLoan1">
+      <class name="test.DataProviders">
         <methods>
-          <include name="testcase3"/>
-          <include name="deleteHistoryBeforePL"/>
-          <include name="generateExecutionResults"/>
+          <include name="amazonLogin"/>
         </methods>
-      </class> <!-- test.PersonalLoan1 -->
+      </class> <!-- test.DataProviders -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

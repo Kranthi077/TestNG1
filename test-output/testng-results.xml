@@ -1,77 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="7" total="12" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
+  <suite name="Suite" duration-ms="39" started-at="2022-11-25T06:32:48Z" finished-at="2022-11-25T06:32:48Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-      <class name="test.PersonalLoan">
-        <test-method status="PASS" signature="deleteCookiesBeforePL()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="deleteCookiesBeforePL" is-config="true" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
+    <test name="Test" duration-ms="39" started-at="2022-11-25T06:32:48Z" finished-at="2022-11-25T06:32:48Z">
+      <class name="test.DataProviders">
+        <test-method status="PASS" signature="launchURL(java.lang.String)[pri:0, instance:test.DataProviders@6ef888f6]" name="launchURL" duration-ms="9" started-at="2022-11-25T06:32:48Z" finished-at="2022-11-25T06:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.amazon.in]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteCookiesBeforePL -->
-        <test-method status="PASS" signature="personalLoanMobileLogin()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="personalLoanMobileLogin" is-config="true" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="amazonLogin(java.lang.String, java.lang.String)[pri:0, instance:test.DataProviders@6ef888f6]" name="amazonLogin" duration-ms="1" started-at="2022-11-25T06:32:48Z" depends-on-methods="test.DataProviders.launchURL" finished-at="2022-11-25T06:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Customer user name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- personalLoanMobileLogin -->
-        <test-method status="PASS" signature="PersonalTest1()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="PersonalTest1" duration-ms="1" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
+        </test-method> <!-- amazonLogin -->
+        <test-method status="PASS" signature="searchProduct(java.lang.String)[pri:0, instance:test.DataProviders@6ef888f6]" name="searchProduct" duration-ms="0" started-at="2022-11-25T06:32:48Z" depends-on-methods="test.DataProviders.amazonLogin" finished-at="2022-11-25T06:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zara]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PersonalTest1 -->
-        <test-method status="PASS" signature="PersonalTest3()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="PersonalTest3" duration-ms="1" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PersonalTest3 -->
-        <test-method status="PASS" signature="personalLoanMobileLogout()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="personalLoanMobileLogout" is-config="true" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalLoanMobileLogout -->
-        <test-method status="PASS" signature="personalLoanMobileLogin()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="personalLoanMobileLogin" is-config="true" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalLoanMobileLogin -->
-        <test-method status="PASS" signature="deleteCookiesAfterPL()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="deleteCookiesAfterPL" is-config="true" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCookiesAfterPL -->
-        <test-method status="PASS" signature="personalLoanMobileLogout()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="personalLoanMobileLogout" is-config="true" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- personalLoanMobileLogout -->
-        <test-method status="PASS" signature="deleteHistoryAfterPL()[pri:0, instance:test.PersonalLoan@4a22f9e2]" name="deleteHistoryAfterPL" is-config="true" duration-ms="1" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteHistoryAfterPL -->
-      </class> <!-- test.PersonalLoan -->
-      <class name="test.PersonalLoan1">
-        <test-method status="PASS" signature="deleteHistoryBeforePL()[pri:0, instance:test.PersonalLoan1@4b5d6a01]" name="deleteHistoryBeforePL" is-config="true" duration-ms="1" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteHistoryBeforePL -->
-        <test-method status="PASS" signature="testcase2()[pri:0, instance:test.PersonalLoan1@4b5d6a01]" name="testcase2" duration-ms="1" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase2 -->
-        <test-method status="PASS" signature="generateExecutionResults()[pri:0, instance:test.PersonalLoan1@4b5d6a01]" name="generateExecutionResults" is-config="true" duration-ms="1" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateExecutionResults -->
-      </class> <!-- test.PersonalLoan1 -->
-      <class name="test.HomeLoan">
-        <test-method status="PASS" signature="setManagerAccess()[pri:0, instance:test.HomeLoan@3d680b5a]" name="setManagerAccess" is-config="true" duration-ms="9" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setManagerAccess -->
-        <test-method status="PASS" signature="testcase4()[pri:0, instance:test.HomeLoan@3d680b5a]" name="testcase4" duration-ms="3" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase4 -->
-        <test-method status="PASS" signature="testcase5()[pri:0, instance:test.HomeLoan@3d680b5a]" name="testcase5" duration-ms="0" started-at="2022-11-23T13:44:11Z" finished-at="2022-11-23T13:44:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase5 -->
-      </class> <!-- test.HomeLoan -->
+        </test-method> <!-- searchProduct -->
+      </class> <!-- test.DataProviders -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -17,12 +17,12 @@ public class PersonalLoan1 {
 		System.out.println("Good Morning");
 	}
 
-	@Test
+	@Test(groups = { "Regression" })
 	public void testcase2() {
 		System.out.println("Hello World");
 	}
 
-	@Test
+	@Test(groups = { "Smoke", "Regression" })
 	public void testcase3() {
 		System.out.println("3rd testcase");
 
