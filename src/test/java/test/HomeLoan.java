@@ -44,6 +44,7 @@ public class HomeLoan {
 	@Test
 	public void testcase5() {
 
+		int a = 1 / 0;
 		System.out.println("I am in testcase 5");
 	}
 

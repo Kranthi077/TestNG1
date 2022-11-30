@@ -1,51 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="1" total="20" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="39" started-at="2022-11-25T06:32:48Z" finished-at="2022-11-25T06:32:48Z">
+  <suite name="Suite" duration-ms="88" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
     <groups>
+      <group name="Regression">
+        <method signature="PersonalLoan1.testcase2()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="testcase2" class="test.PersonalLoan1"/>
+        <method signature="PersonalLoan1.testcase3()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="testcase3" class="test.PersonalLoan1"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="HomeLoan.HomeLoanMobileLogin()[pri:0, instance:test.HomeLoan@1d119efb]" name="HomeLoanMobileLogin" class="test.HomeLoan"/>
+        <method signature="HomeLoan.HomeLoanMobileLogout()[pri:0, instance:test.HomeLoan@1d119efb]" name="HomeLoanMobileLogout" class="test.HomeLoan"/>
+        <method signature="PersonalLoan.PersonalTest1()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="PersonalTest1" class="test.PersonalLoan"/>
+        <method signature="PersonalLoan.PersonalTest3()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="PersonalTest3" class="test.PersonalLoan"/>
+        <method signature="PersonalLoan1.testcase3()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="testcase3" class="test.PersonalLoan1"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="39" started-at="2022-11-25T06:32:48Z" finished-at="2022-11-25T06:32:48Z">
-      <class name="test.DataProviders">
-        <test-method status="PASS" signature="launchURL(java.lang.String)[pri:0, instance:test.DataProviders@6ef888f6]" name="launchURL" duration-ms="9" started-at="2022-11-25T06:32:48Z" finished-at="2022-11-25T06:32:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[www.amazon.in]]>
-              </value>
-            </param>
-          </params>
+    <test name="Test2" duration-ms="38" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+      <class name="test.PersonalLoan">
+        <test-method status="PASS" signature="deleteCookiesBeforePL()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="deleteCookiesBeforePL" is-config="true" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method status="PASS" signature="amazonLogin(java.lang.String, java.lang.String)[pri:0, instance:test.DataProviders@6ef888f6]" name="amazonLogin" duration-ms="1" started-at="2022-11-25T06:32:48Z" depends-on-methods="test.DataProviders.launchURL" finished-at="2022-11-25T06:32:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Customer user name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- deleteCookiesBeforePL -->
+        <test-method status="PASS" signature="personalLoanMobileLogin()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="personalLoanMobileLogin" is-config="true" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amazonLogin -->
-        <test-method status="PASS" signature="searchProduct(java.lang.String)[pri:0, instance:test.DataProviders@6ef888f6]" name="searchProduct" duration-ms="0" started-at="2022-11-25T06:32:48Z" depends-on-methods="test.DataProviders.amazonLogin" finished-at="2022-11-25T06:32:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zara]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- personalLoanMobileLogin -->
+        <test-method status="PASS" signature="PersonalTest1()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="PersonalTest1" duration-ms="4" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProduct -->
-      </class> <!-- test.DataProviders -->
-    </test> <!-- Test -->
+        </test-method> <!-- PersonalTest1 -->
+        <test-method status="PASS" signature="personalLoanMobileLogout()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="personalLoanMobileLogout" is-config="true" duration-ms="2" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoanMobileLogout -->
+        <test-method status="PASS" signature="personalLoanMobileLogin()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="personalLoanMobileLogin" is-config="true" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoanMobileLogin -->
+        <test-method status="PASS" signature="PersonalTest2()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="PersonalTest2" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalTest2 -->
+        <test-method status="PASS" signature="personalLoanMobileLogout()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="personalLoanMobileLogout" is-config="true" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoanMobileLogout -->
+        <test-method status="PASS" signature="personalLoanMobileLogin()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="personalLoanMobileLogin" is-config="true" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoanMobileLogin -->
+        <test-method status="PASS" signature="PersonalTest3()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="PersonalTest3" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalTest3 -->
+        <test-method status="PASS" signature="deleteCookiesAfterPL()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="deleteCookiesAfterPL" is-config="true" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCookiesAfterPL -->
+        <test-method status="PASS" signature="personalLoanMobileLogout()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="personalLoanMobileLogout" is-config="true" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoanMobileLogout -->
+        <test-method status="PASS" signature="deleteHistoryAfterPL()[pri:0, instance:test.PersonalLoan@654f0d9c]" name="deleteHistoryAfterPL" is-config="true" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteHistoryAfterPL -->
+      </class> <!-- test.PersonalLoan -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="41" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+      <class name="test.PersonalLoan1">
+        <test-method status="PASS" signature="deleteHistoryBeforePL()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="deleteHistoryBeforePL" is-config="true" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteHistoryBeforePL -->
+        <test-method status="PASS" signature="printdata()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="printdata" duration-ms="7" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printdata -->
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="testcase2" duration-ms="4" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="testcase3()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="testcase3" duration-ms="2" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+      </class> <!-- test.PersonalLoan1 -->
+    </test> <!-- Test3 -->
+    <test name="Test1" duration-ms="48" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+      <class name="test.HomeLoan">
+        <test-method status="PASS" signature="HomeLoanMobileLogin()[pri:0, instance:test.HomeLoan@1d119efb]" name="HomeLoanMobileLogin" duration-ms="5" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanMobileLogin -->
+        <test-method status="PASS" signature="HomeLoanMobileLogout()[pri:0, instance:test.HomeLoan@1d119efb]" name="HomeLoanMobileLogout" duration-ms="3" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanMobileLogout -->
+        <test-method status="PASS" signature="HomeLoanWebLogin()[pri:0, instance:test.HomeLoan@1d119efb]" name="HomeLoanWebLogin" duration-ms="2" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanWebLogin -->
+        <test-method status="PASS" signature="HomeLoanWebLogout()[pri:0, instance:test.HomeLoan@1d119efb]" name="HomeLoanWebLogout" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeLoanWebLogout -->
+        <test-method status="PASS" signature="testcase4()[pri:0, instance:test.HomeLoan@1d119efb]" name="testcase4" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase4 -->
+        <test-method status="FAIL" signature="testcase5()[pri:0, instance:test.HomeLoan@1d119efb]" name="testcase5" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at test.HomeLoan.testcase5(HomeLoan.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase5 -->
+      </class> <!-- test.HomeLoan -->
+    </test> <!-- Test1 -->
+    <test name="Test4" duration-ms="16" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+      <class name="test.AdditionalTestCases">
+        <test-method status="PASS" signature="appler()[pri:-1, instance:test.AdditionalTestCases@5e82df6a]" name="appler" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appler -->
+        <test-method status="PASS" signature="ProductAdded()[pri:0, instance:test.AdditionalTestCases@5e82df6a]" name="ProductAdded" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductAdded -->
+        <test-method status="PASS" signature="boy()[pri:0, instance:test.AdditionalTestCases@5e82df6a]" name="boy" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- boy -->
+        <test-method status="PASS" signature="appleb()[pri:0, instance:test.AdditionalTestCases@5e82df6a]" name="appleb" duration-ms="6" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appleb -->
+        <test-method status="PASS" signature="CheckProduct()[pri:0, instance:test.AdditionalTestCases@5e82df6a]" name="CheckProduct" duration-ms="0" started-at="2022-11-30T06:17:19Z" depends-on-methods="test.AdditionalTestCases.ProductAdded" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckProduct -->
+        <test-method status="PASS" signature="dog()[pri:1, instance:test.AdditionalTestCases@5e82df6a]" name="dog" duration-ms="1" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dog -->
+        <test-method status="PASS" signature="cat()[pri:1, instance:test.AdditionalTestCases@5e82df6a]" name="cat" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cat -->
+      </class> <!-- test.AdditionalTestCases -->
+      <class name="test.PersonalLoan1">
+        <test-method status="PASS" signature="generateExecutionResults()[pri:0, instance:test.PersonalLoan1@c267ef4]" name="generateExecutionResults" is-config="true" duration-ms="0" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExecutionResults -->
+      </class> <!-- test.PersonalLoan1 -->
+      <class name="test.HomeLoan">
+        <test-method status="PASS" signature="setManagerAccess()[pri:0, instance:test.HomeLoan@1d119efb]" name="setManagerAccess" is-config="true" duration-ms="9" started-at="2022-11-30T06:17:19Z" finished-at="2022-11-30T06:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setManagerAccess -->
+      </class> <!-- test.HomeLoan -->
+    </test> <!-- Test4 -->
   </suite> <!-- Suite -->
 </testng-results>
